@@ -14,15 +14,31 @@ namespace BoolExplore
 			int _ui = Convert.ToInt32 (Console.ReadLine ());
 			bool _chek01 = _ui <= _i.Length;
 			bool _chek02 = _ui > 0;
+//
+//			bool _exp01 = _chek01 && _chek02;     //Логическо и "§§"
+//			bool _exp02 = _chek01 || _chek02;     //Логическо или "||"
+//			bool _exp03 = !_chek01;               //Отрицание "!"
+//
+//			Console.WriteLine ( "Логическо И: " + _exp01.ToString () );
+//			Console.WriteLine ( "Логическо ИЛИ: " +  _exp02.ToString () );
+//			Console.WriteLine ( "Отрицание на " +  _chek01.ToString () + ": " + _exp03 );
 
-			bool _exp01 = _chek01 && _chek02;     //Логическо и "§§"
-			bool _exp02 = _chek01 || _chek02;     //Логическо или "||"
-			bool _exp03 = !_chek01;               //Отрицание "!"
-
-			Console.WriteLine ( "Логическо И: " + _exp01.ToString () );
-			Console.WriteLine ( "Логическо ИЛИ: " +  _exp02.ToString () );
-			Console.WriteLine ( "Отрицание на " +  _chek01.ToString () + ": " + _exp03 );
-			//Console.WriteLine ( _i [ _ui - 1] );
+			if (_ui > 0 && _ui <= _i.Length) {
+			Console.WriteLine ( _i [ _ui - 1] );
+			} else { 
+				if (_ui > _i.Length)
+				{	
+				Console.WriteLine ("Индексът е прекалено голям \n\n\n");
+			}
+				if (_ui <= 0)
+				{
+					Console.WriteLine ("Индексът е прекалено малък \n\n\n");
+		} 
+				
+	}
 		}
 	}
 }
+
+	
+	
