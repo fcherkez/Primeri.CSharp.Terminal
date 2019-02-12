@@ -11,34 +11,36 @@ namespace BoolExplore
 			//bool _test = 5 > 10;
 
 			int[] _i = new int[] {4, 3, 2 };
-			int _ui = Convert.ToInt32 (Console.ReadLine ());
-			bool _chek01 = _ui <= _i.Length;
-			bool _chek02 = _ui > 0;
-//
-//			bool _exp01 = _chek01 && _chek02;     //Логическо и "§§"
-//			bool _exp02 = _chek01 || _chek02;     //Логическо или "||"
-//			bool _exp03 = !_chek01;               //Отрицание "!"
-//
-//			Console.WriteLine ( "Логическо И: " + _exp01.ToString () );
-//			Console.WriteLine ( "Логическо ИЛИ: " +  _exp02.ToString () );
-//			Console.WriteLine ( "Отрицание на " +  _chek01.ToString () + ": " + _exp03 );
+			int _ui = 0; //Convert.ToInt32 (Console.ReadLine ());
+			string _input = "0";
+			Console.Write ("Моля въведете индекс: ");
+			_input = Console.ReadLine ();
 
-			if (_ui > 0 && _ui <= _i.Length) {
-			Console.WriteLine ( _i [ _ui - 1] );
-			} else { 
-				if (_ui > _i.Length)
-				{	
+			bool _chek01 = int.TryParse ( _input, out _ui );
+			bool _chek02 = _ui <= _i.Length;
+			bool _chek03 = _ui > 0;
+
+			if (_chek01 && _chek02 && _chek03) {
+				Console.WriteLine ( _i [ _ui - 1] );
+			}
+			if (!_chek01) {
+				Console.WriteLine ("Индексът трябва да бъде цяло число \n\n\n");
+			}
+
+			if (!_chek02) {
 				Console.WriteLine ("Индексът е прекалено голям \n\n\n");
 			}
-				if (_ui <= 0)
-				{
-					Console.WriteLine ("Индексът е прекалено малък \n\n\n");
+
+			if (!_chek03 && _chek01) {
+				Console.WriteLine ("Индексът е прекалено малък \n\n\n");
+			}
+		
 		} 
 				
 	}
 		}
-	}
-}
+	
+
 
 	
 	
