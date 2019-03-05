@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Module05", "Module05\Module
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassExplorer", "ClassExplorer\ClassExplorer.csproj", "{7BEF7C00-65DC-43D3-B653-43A5C64783C9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fact", "Fact\Fact.csproj", "{A1343FAB-5243-438B-A343-ABB174B6C884}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -15,6 +17,10 @@ Global
 		{7BEF7C00-65DC-43D3-B653-43A5C64783C9}.Debug|x86.Build.0 = Debug|x86
 		{7BEF7C00-65DC-43D3-B653-43A5C64783C9}.Release|x86.ActiveCfg = Release|x86
 		{7BEF7C00-65DC-43D3-B653-43A5C64783C9}.Release|x86.Build.0 = Release|x86
+		{A1343FAB-5243-438B-A343-ABB174B6C884}.Debug|x86.ActiveCfg = Debug|x86
+		{A1343FAB-5243-438B-A343-ABB174B6C884}.Debug|x86.Build.0 = Debug|x86
+		{A1343FAB-5243-438B-A343-ABB174B6C884}.Release|x86.ActiveCfg = Release|x86
+		{A1343FAB-5243-438B-A343-ABB174B6C884}.Release|x86.Build.0 = Release|x86
 		{F3137C2B-B1A9-4E2D-88F5-C15AB765FAAC}.Debug|x86.ActiveCfg = Debug|x86
 		{F3137C2B-B1A9-4E2D-88F5-C15AB765FAAC}.Debug|x86.Build.0 = Debug|x86
 		{F3137C2B-B1A9-4E2D-88F5-C15AB765FAAC}.Release|x86.ActiveCfg = Release|x86
